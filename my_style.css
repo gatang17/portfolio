@@ -1,0 +1,441 @@
+body{
+    height: 100%;
+    width: 100vw;
+
+}
+p{
+    font-size: 1rem;
+}
+
+
+
+.my_H1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFC107;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: 4rem;
+
+}
+
+.my_H3{ 
+    margin-top: 1rem;
+    color: #FFFFFF;
+    position: relative;
+    margin-left: 1rem;
+}
+
+.my_cf_hero{
+    height: 40vh;
+    padding: 20px;
+}
+
+
+
+
+
+/*mobiles*/
+@media (max-width: 750px) { /* mobile */
+        
+    .my_H1{
+        font-size: 2.5rem;
+
+    }     
+
+    .my_container-fluid{
+        margin-bottom: 2rem;
+        position: relative;
+        height: 20vh;
+        padding: 0%;    
+        width: 100%;
+        object-fit: fill;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+
+    }
+
+
+    .my_carousel-inner {
+        width: 100%;
+        padding: 1rem;
+        object-position: center;
+        align-items: center;
+        align-content: center;
+    }
+    .my_img_div{
+        display: flex;
+        flex-flow: row;
+    }
+
+    .carousel_img{
+        width: 50%;
+        object-fit: fill;
+        margin-bottom: 1rem;
+    }
+
+    .product_description{
+        width: 50%;
+        margin-left: 1rem;
+    }
+
+    .container_flex{
+        display: flex;
+        flex-flow: column;
+
+    }
+    .big_card_body{
+        display: flex;
+        flex-flow: column;
+    }
+
+    .carousel_img:active{
+        max-height: auto;
+        max-width: 50% ;
+        object-fit: cover;
+        margin-bottom: 1rem;
+        border-radius: 50px   
+    }
+    
+
+}
+
+
+
+/*navegation Bar*/
+
+.navbar {
+    background-color: #002D3D; /* Barra de navegación negra */
+}
+.offcanvas {
+    background-color: rgba(15, 31, 44, 0.8); /* Fondo negro con opacidad del 80% */
+}
+.offcanvas a {
+    color: #FFC107; /* Texto color */
+}
+.offcanvas a:hover {
+    background-color: #002D3D; /* Fondo gris oscuro al pasar el mouse */
+}
+
+
+.type-link{
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+.my_logo{
+    height: 4rem;
+}
+
+
+
+.my_container-fluid{
+    margin-bottom: 2rem;
+    position: relative;
+    height: 50vh;
+    padding: 0%;    
+    width: 100%;
+    object-fit: fill;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+
+}
+#my_container-fluid1{
+    height: 60vh;
+    background-image: url('/Images/woman_with_headphonesB.jpg');
+    object-fit: cover;
+}
+/*carousel styles*/
+
+
+.my_cont-fluid{
+    background-color: #ffffff;
+    padding-top: 1rem;
+    width: 100%;
+    height: 40%;
+
+}
+.my_H3-1{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #FFC107;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.my_carousel-inner {
+
+    object-position: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+}
+
+.carousel_img{
+    min-height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+
+}
+
+
+
+.product_description{
+    color: #002D3D;
+    visibility: hidden;
+    height: auto;
+
+}
+
+.carousel_img:active + .product_description{
+    visibility: visible;
+
+}
+.carousel_img:hover{
+    cursor: pointer;
+}
+
+
+
+.my_img_div{
+    align-items: center;
+    object-fit: cover;
+    padding: 0;
+    margin: 0rem;
+    width: 100%;
+    min-height: 100%;
+
+}
+
+
+.my_carousel_item{
+    flex-flow: row;
+}
+
+#my_container-fluid22{
+    background-color: #002D3D;
+    align-content: center;
+    margin-top: 2rem;
+
+}
+
+.my_img_wave{
+    object-fit: cover;
+    opacity: 0.5;
+    width: 100%;
+    height: 60%;
+    z-index: 1;
+
+    padding: 1rem;
+
+
+}
+#my_container-fluid2{
+    margin-top: 2rem;
+    height: 50vh;
+    background-image: url('/Images/white_headphones.jpg')
+
+}
+
+.my_h3_w{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.my_H3-2{
+    text-align: right;
+
+    color: #254874;
+    position: relative;
+    margin: 1rem;
+}
+
+
+
+.p_text{
+    color: #FFC107;
+    margin: 1rem;;
+
+
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
+.boton{
+    text-align: end;
+    padding-right: 2%;
+    padding-top: 2%;
+}
+.btn-close {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+    padding: 10px; /* Ajusta el tamaño del botón */
+
+}
+
+
+.btn-close:hover {
+    background-color: rgba(255, 0, 0, 0.7); /* Cambia el color al pasar el mouse */
+    cursor: pointer;
+
+}
+
+.nav-item2 {
+    color: #254874;
+    margin: 0;
+
+}
+
+.nav-item2:hover{
+    font-size: 1.5rem;
+    color: #FFC107;
+
+
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+
+#my_container-fluidLast{
+    height: 5%;
+}
+
+#my_container-fluid3{
+    background-image: url(/Images/african_with_headphones_in_yelow.jpg)
+
+}
+
+#big_container{
+
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+.my_footer{
+
+    position: relative;
+    margin-top: 2rem;
+    padding-left: 2rem;;
+    height: 10vh;
+    width: 100%;
+    background-color: #002D3D;
+}
+/*product page*/
+
+.my_modal_gallery{
+    top: 0;
+    
+    position: absolute;
+}
+
+.my_card_body{
+    width: 100%;
+    height: auto; 
+    align-content: center;
+
+}
+
+
+.big_card_body{
+    display: flex;
+    flex-flow: row;
+}
+
+.product_image{
+    align-content: center;
+    position: relative;
+    max-height: 80%;
+
+}
+
+.icons{
+    margin-right: 1rem;
+    font-size:1.5rem;
+    color:#ffffff;
+}
+
+/*gallerypage*/
+.cont_gallery{
+    width: 100%;
+    height: 0%;
+    object-fit: contain;
+    display: flex;
+    flex-flow: row;
+}
+
+.cont_gallery-1{
+    display: flex;
+    flex-flow: row;
+    
+    object-position: center; 
+}
+
+
+ .cont_gallery-2{
+    object-fit: contain;
+    object-position: center;
+     width: 100%;  
+   
+ }
+
+ .gallery1{
+    width: 50%;
+    margin-right: 2%;
+    object-fit: contain;
+ }
+
+ .gallery2{
+    width: 100%;
+    padding: 5%;
+    
+ }
+
+ .image-link {
+    display: contents; /* Ensures it behaves like a block element without shrinking */
+    text-decoration: none; /* Removes any underline */
+  }
+
+ .gallery1:hover, .gallery2:hover{
+    cursor: pointer;
+ }
+
+/* Asegurarse de que las imágenes no excedan los límites del modal */
+.carousel-inner2 .d-block2 {
+    max-height: 85vh; /* Limitar altura al 85% de la ventana */
+    width: auto; /* Mantener proporción de ancho */
+    margin: auto; /* Centrar imágenes */
+    object-fit: contain; /* Ajuste para evitar recortes */
+}
+
+/* Estilos para asegurar que los botones sean visibles */
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 1055; /* Asegurar que los botones están por encima de las imágenes */
+}
+
+.modal-fullscreen .modal-body {
+    display: flex;
+    align-items: center; /* Centrar el carrusel verticalmente */
+    justify-content: center; /* Centrar el carrusel horizontalmente */
+    padding: 0; /* Quitar padding para maximizar espacio */
+}
+
+

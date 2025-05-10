@@ -1,0 +1,435 @@
+
+.my_container{
+    
+    display: flex;
+    flex-flow: row;
+   
+    
+}
+.container_logo{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.sec_logo{
+    margin: 1em;
+    
+}
+
+.p_info{
+    margin-bottom: -0.1em;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.img_logo{
+      height: auto;
+      width: 25VW;
+      
+}
+
+.div_menu_home {
+    border-right: 2px solid black; /* o el color que prefieras */
+  }
+
+
+.div_menu{
+    visibility: hidden;
+    position: absolute;
+}
+.navbar , .navbar-toggler {
+    border: transparent;
+}
+.btn_menu{
+    background-image: url(/images/btn_menu1.png);
+    
+}
+body{
+padding: 2rem;
+}
+
+.btn_menu2{
+    background-image: url(/images/btn_menu2.png);
+    
+}
+
+.cont_line2{
+    position: relative;
+    height: 2px; /* ajusta como desees */
+   margin-bottom: 10rem;
+   margin-top: 1rem;
+   }  
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+details, summary{
+    font-family: 'Courier New', Courier, monospace;
+    overflow-wrap: break-word;
+    word-break: keep-all;
+    hyphens: none;
+    font-weight: bolder;
+    
+}
+
+p{
+    
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    line-height: 2;
+    overflow-wrap: break-word;
+    word-break: keep-all;
+    hyphens: none;
+    }
+
+    .p_v, .p_h, .p_h_m{ 
+        /*solo PARA MENUs*/
+        font-size: 1rem;
+        margin-bottom: 2em;
+        
+        }
+
+
+/*HOVER PARA MENU*/
+
+ .p_v:hover{    
+         transform: scale(1.05);
+         text-decoration: underline;
+         
+    }
+    .p_h:hover{
+        transform: scale(1.05);
+        text-decoration: underline;
+    }
+
+    .p_h_m:hover{
+        transform: scale(1.05);
+        text-decoration: underline;
+    }
+
+    /*HOVER PARA MENU FIN*/
+
+  
+    
+    .p_h{   /*menu Horizontal*/
+        padding-block:0.5em;
+        padding-right: 5em;
+        padding-left: 5em;
+        color: #ffff;
+        text-align: center;
+    }
+    
+      
+      .p_h_m{ /*menu offCanvas*/
+        padding-left: 2em;
+        color: #ffff;
+        transition: transform 0.3s;
+      }
+      
+
+.p_v { /*menu vertical*/
+    display: inline-block;
+     }
+  
+     .sec_menu, .sec_menu2{
+        padding-top: 5em;
+        text-align: right;       
+        text-align: right;
+        align-content:baseline;
+    }
+
+
+  
+
+
+
+
+
+.offcanvas{
+background-color: black;
+opacity: 80%;
+padding: 20px;
+}
+
+.img_logoH{
+width: 150px;
+margin-bottom: 2rem; 
+    
+}
+
+
+
+.img_line{
+    height:100vh ;
+    margin-top: 1em;
+    margin: 1em;  
+}
+
+
+
+.sec_hero{
+    margin-left: 1REM;
+    width: 100VW;
+    height: 100%;
+    background-blend-mode: multiply;
+    background-image: url(/images/hero.png);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.hero_text{
+    position: absolute;
+    left: 60%;
+    top: 30%;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.7); /* blanco con 70% de opacidad */
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+.cont_footer{
+    display: flex;
+}
+
+.container_foot{
+    background-color: black;
+ 
+      
+}
+
+/*Pagina PROJECTS*/
+  
+.h1_title{
+    background-color: #90720d ;
+    color: #ffff;
+    text-align: center;
+    
+}
+
+.tb_img{
+    height: auto;
+    width: auto;
+    z-index: 3;
+}
+
+.cont_descript { /*esto es para q el objeto see more este centrado en la imagen*/
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.p_hover { /*este es el texto*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1px 1px;
+  border-radius: 3px;
+  font-weight: bold;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* evita que interrumpa el click */
+  z-index: 1; /*este hace q se ponga delante de todo*/
+  font-size: 2rem;
+}
+.tb_img:hover{ /*este hace q la imagen crezca*/
+    transform: scale(1.08) ;
+    opacity: 50%;
+  
+}
+
+.cont_descript:hover .p_hover{ /*esto hace q se haga visible*/
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/*quill pen press page*/
+.cont_project{
+    margin-top: 2em;    
+}
+.sec_project{
+    justify-content: center;
+    margin: 2rem;
+   }
+
+.my_col{
+border: solid;
+
+}
+.img_project{
+    max-width: 100%;
+    
+}
+.cont_info {
+  
+    background-color: blanchedalmond;
+       padding: 2rem;
+       
+   }
+
+
+   .p_info{
+    font-size: 1rem;
+    text-align: left;
+   }
+
+   .cont_line{
+   
+    position: relative;
+    height: 2px; /* ajusta como desees */
+    margin: 2px;
+
+   }
+
+
+ .img_horizontal{
+  
+  width: 100%;
+  height: 100%;
+   
+   
+}
+
+/*aboutme*/
+
+.cont_aca_hono{
+    padding: 1rem;
+}
+.menudrp{
+    visibility: hidden;
+
+}
+@media (max-width: 768px) {
+    .sec_menu{
+        visibility: hidden;
+    }
+    .menudrp{
+        visibility: visible;
+        
+    
+    }
+    .my_container{
+        display: inline-block;
+    }
+    .img_line{
+       visibility: hidden;
+       position: absolute;
+    }
+   .p_info{
+font-size: small;
+}
+    .img_logo{
+        height: 25vh;
+        }
+  
+  }
+
+  
+  @media (min-width: 1550px) {
+    .img_logo {
+      max-width: 400px;
+    }
+  }
+
+
+
+  /*MEDIA QUERY*/
+  @media (max-width: 750px) {
+    .div_menu{
+        visibility: visible;
+        position: relative;
+    }
+
+    .container_logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    
+      .sec_logo {
+        width: 50vw;
+        margin-bottom: 15PX;
+      }
+      .p_info{
+        text-align: center;
+      }
+    
+      .sec_logo img {
+        display: block;
+        margin: 0 auto;
+        max-width: 80%;
+        height: auto;
+      }
+
+    .sec_menu2{
+        padding: 5px;
+        margin: 5px;
+       position: relative;
+         text-align: left;
+        justify-content: center;
+        display: flex;
+        text-indent: 0.5rem;
+       transform: scale(0.9)
+    }
+    .div_menu_home {
+        border-right: 0;
+        }
+    
+    .space{
+        height: 2PX;
+        width: 100%;
+        background-color: black;
+    }
+    .sec_menu{
+        padding: 0;
+        margin: 0;
+        height: 0;
+        visibility: hidden;
+        
+    }
+    .sec_hero{
+        width: auto;
+        height: 70vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: -15rem !important;
+        margin-bottom: -15rem !important;
+        padding: 0 !important;
+    }
+
+    .hero_text {
+        position: relative;
+        left: 0;
+        top: auto;
+        text-align: center;
+        justify-content: center;
+        color: black;
+        margin-bottom: 0 !important;
+        padding: 0 !important;
+      }
+      .p_h{
+        margin: 0;
+      }
+
+      footer.container_foot {
+        text-align: center;
+        justify-content: center !important;
+        align-items: center !important;
+      
+      }
+      
+      .cont_footer {
+       
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+      }
+   
+  }
