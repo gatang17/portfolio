@@ -44,7 +44,7 @@
     border: transparent;
 }
 .btn_menu{
-    background-image: url(/images/btn_menu1.png);
+    background-image: url(../images/btn_menu1.png);
     
 }
 body{
@@ -52,7 +52,7 @@ padding: 2rem;
 }
 
 .btn_menu2{
-    background-image: url(/images/btn_menu2.png);
+    background-image: url(../images/btn_menu2.png);
     
 }
 
@@ -177,7 +177,7 @@ margin-bottom: 2rem;
     width: 100VW;
     height: 100%;
     background-blend-mode: multiply;
-    background-image: url(/images/hero.png);
+    background-image: url(../images/hero.png);
     background-position: center;
     background-size: cover;
 
