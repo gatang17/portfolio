@@ -1,6 +1,7 @@
 
 .my_container{
-    
+    width: 100vw;
+    height: auto;
     display: flex;
     flex-flow: row;
    
@@ -17,9 +18,11 @@
 }
 
 .p_info{
+   
     margin-bottom: -0.1em;
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
+    
 }
 
 .img_logo{
@@ -267,18 +270,12 @@ border: solid;
 }
 .cont_info {
   
-    background-color: blanchedalmond;
-       padding: 2rem;
-       
+
+             width: 100vw;
    }
 
 
-   .p_info{
-    font-size: 1rem;
-    text-align: left;
-   }
-
-   .cont_line{
+  .cont_line{
    
     position: relative;
     height: 2px; /* ajusta como desees */
@@ -320,9 +317,7 @@ border: solid;
        visibility: hidden;
        position: absolute;
     }
-   .p_info{
-font-size: small;
-}
+ 
     .img_logo{
         height: 25vh;
         }
@@ -340,6 +335,14 @@ font-size: small;
 
   /*MEDIA QUERY*/
   @media (max-width: 750px) {
+
+    .p_info{
+        height: 20vh;
+        width: auto;
+        overflow: scroll;
+        text-align: left;
+    }
+
     .div_menu{
         visibility: visible;
         position: relative;
@@ -356,7 +359,7 @@ font-size: small;
         width: 50vw;
         margin-bottom: 15PX;
       }
-      .p_info{
+      .p_info1{
         text-align: center;
       }
     
