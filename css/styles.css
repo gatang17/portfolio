@@ -1,12 +1,5 @@
 
-.my_container{
-    width: 100vw;
-    height: auto;
-    display: flex;
-    flex-flow: row;
-   
-    
-}
+
 .container_logo{
     justify-content: center;
     align-items: center;
@@ -43,6 +36,12 @@
 .navbar , .navbar-toggler {
     border: transparent;
 }
+
+.btn_drop{
+    background-color: aqua;
+    margin-left: rem;
+}
+
 .btn_menu{
     background-image: url(../images/btn_menu1.png);
     
@@ -311,7 +310,12 @@ border: solid;
     
     }
     .my_container{
-        display: inline-block;
+        padding: 0;
+        margin: 0 auto;
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-flow: row;
     }
     .img_line{
        visibility: hidden;

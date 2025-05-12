@@ -11,58 +11,91 @@
     <body>
 <div class="container-fluid cont_project">
 
-    <div class="container-fluid">
-        <div class="row-12">
-            <div class="col">
-                <nav class="navbar navbar-toggler">
-                    <div class="container-fluid">
-                        <img src="images/logo2.png" alt="" class="img_logoH">
-                        <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                            <span class="navbar-toggler-icon btn_menu"></span>
-                        </button>
-
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
-                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
-                                    <span class="navbar-toggler-icon btn_menu2"></span>
-                                </button>
-                                
-                            </div>
-                            <div class="offcanvas-body">
-                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                    <li class="nav-item">
-                                        <a class="nav-link text-decoration-underline" href="index.html"><p class="p_h_m">home</p></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-decoration-underline" href="project.html"><p class="p_h_m">project</p></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-decoration-underline" href="aboutme.html"><p class="p_h_m">about_me</p></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-decoration-underline" href="contact.html"><p class="p_h_m">contact</p></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-decoration-underline" href="project.html"><p class="p_h_m">gallery</p></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
+    <div class="container-fluid my_container">
+        <div class="row align-items-center">
+          
+          <!-- Logo -->
+          <div class="col-6 col-md-3">
+            <section class="sec_logo">
+              <img src="images/logo2.png" alt="Logo" class="img_logoH">
+            </section>
+          </div>
+      
+          <!-- Menú horizontal para pantallas grandes -->
+          <div class="col-md-9 d-none d-md-flex justify-content-end">
+            <div class="row w-100 justify-content-end">
+              <div class="col-auto">
+                <a class="nav-link" href="index.html"><p class="p_h2">home</p></a>
+              </div>
+              <div class="col-auto">
+                <a class="nav-link" href="project.html"><p class="p_h2">projects</p></a>
+              </div>
+              <div class="col-auto">
+                <p class="p_h2">expertise</p>
+              </div>
+              <div class="col-auto">
+                <a class="nav-link" href="aboutme.html"><p class="p_h2">about_me</p></a>
+              </div>
+              <div class="col-auto">
+                <a class="nav-link" href="contact.html"><p class="p_h2">contact</p></a>
+              </div>
             </div>
-
+          </div>
+      
+          <!-- Botón Hamburguesa para pantallas pequeñas -->
+          <div class="col-6 d-flex justify-content-end d-md-none">
+            <nav class="navbar">
+              <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                  <span class="navbar-toggler-icon btn_menu"></span>
+                </button>
+      
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                      <span class="navbar-toggler-icon btn_menu2"></span>
+                    </button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html"><p class="p_h_m">home</p></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="project.html"><p class="p_h_m">project</p></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="aboutme.html"><p class="p_h_m">about_me</p></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html"><p class="p_h_m">contact</p></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="project.html"><p class="p_h_m">gallery</p></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+      
         </div>
-        <div class="container-fluid cont_line2">
-            <p style="font-size: small;"><span style="font-weight: normal;">here you are: 
-                <a style="color: black;" href="index.html">home</a> &#8594; 
-                <a style="color: black;" href="project.html">project</a> &#8594;</span>
-                Quill Pen Press
-                </p>
-            <img src="images/line.png" class="img_horizontal">
-        </div>
-    </div>
+      </div>
+      
+      <!-- Línea inferior -->
+      <div class="container-fluid cont_line2">
+        <p style="font-size: small;">
+          <span style="font-weight: normal;">here you are: 
+            <a style="color: black;" href="index.html">home</a> &#8594;
+            <a style="color: black;" href="project.html">project</a> &#8594;
+            
+          </span>
+          The Quill Pen Press
+        </p>
+        <img src="images/line.png" class="img_horizontal">
+      </div>
 
     <div>
 
