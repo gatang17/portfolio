@@ -257,13 +257,13 @@ margin-bottom: 2rem;
 }
 .sec_project{
     justify-content: center;
-    margin: 2rem;
    }
 
 .my_col{
 border: solid;
 
 }
+
 .img_project{
     max-width: 100%;
     
@@ -433,6 +433,20 @@ border: solid;
         align-items: center;
         text-align: center;
         
+      }
+      .sec_project {
+        display: flex;
+        flex-direction: column; /* Asegura que los elementos se apilen */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .my_col {
+        margin: 1rem 0; /* Asegura que haya un pequeño espacio entre las columnas */
+    }
+    .p_hover { /*este es el texto*/
+        font-size: 1rem;
       }
    
   }
