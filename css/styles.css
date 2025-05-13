@@ -300,35 +300,7 @@ border: solid;
     visibility: hidden;
 
 }
-@media (max-width: 768px) {
-    .sec_menu{
-        visibility: hidden;
-    }
-    .menudrp{
-        visibility: visible;
-        
-    
-    }
-    .my_container{
-        padding: 0;
-        margin: 0 auto;
-        width: 100vw;
-        height: auto;
-        display: flex;
-        flex-flow: row;
-    }
-    .img_line{
-       visibility: hidden;
-       position: absolute;
-    }
  
-    .img_logo{
-        height: 25vh;
-        }
-  
-  }
-
-  
   @media (min-width: 1550px) {
     .img_logo {
       max-width: 400px;
@@ -339,7 +311,36 @@ border: solid;
 
   /*MEDIA QUERY*/
   @media (max-width: 750px) {
+    .space_2{
+        height: 50%;
+    }
+    .menudrp{
+        visibility: visible;
+          
+    }
 
+    .my_container1{
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        display: block;
+        flex-flow: row;
+    }
+    .my_container{
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: row;
+    }
+    .img_line{
+       visibility: hidden;
+       position: absolute;
+    }
+ 
+  
     .p_info{
         height: 20vh;
         width: auto;
@@ -355,22 +356,25 @@ border: solid;
     .container_logo {
         display: flex;
         justify-content: center;
-        align-items: center;
-        text-align: center;
+        
       }
+   
     
       .sec_logo {
-        width: 50vw;
+        display: flex;
+        width: 100%;
         margin-bottom: 15PX;
+       
       }
       .p_info1{
-        text-align: center;
+        text-align: left;
+        padding-left: 10px;
+        font-size: 1rem;
+        margin-bottom: -5px;
       }
     
       .sec_logo img {
-        display: block;
-        margin: 0 auto;
-        max-width: 80%;
+        max-width: 30%;
         height: auto;
       }
 
@@ -398,33 +402,37 @@ border: solid;
         margin: 0;
         height: 0;
         visibility: hidden;
-        
+        visibility: hidden;
     }
+   
     .sec_hero{
         width: auto;
-        height: 70vh;
+        height: 40vh;
         background-size: contain;
         background-repeat: no-repeat;
-        margin-top: -15rem !important;
-        margin-bottom: -15rem !important;
+        margin-bottom: -1rem !important;
         padding: 0 !important;
+        position: relative;
     }
 
     .hero_text {
         position: relative;
-        left: 0;
-        top: auto;
+        left: 0%;
+        top: 0%;
         text-align: center;
         justify-content: center;
         color: black;
-        margin-bottom: 0 !important;
-        padding: 0 !important;
+        margin-bottom: 2rem !important;
+        padding: 10px !important;
+        z-index: 1;
+        background-color: transparent;
       }
       .p_h{
         margin: 0;
       }
 
       footer.container_foot {
+        margin-top: 2rem;
         text-align: center;
         justify-content: center !important;
         align-items: center !important;
