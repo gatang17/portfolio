@@ -277,6 +277,9 @@ border: solid;
     max-width: 100%;
     
 }
+.img_project:active{
+    transform: scale(200%);
+}
 .cont_info {
   
 
@@ -342,6 +345,7 @@ border: solid;
         display: flex;
         flex-flow: row;
          }
+
     .img_line{
        visibility: hidden;
        position: absolute;
