@@ -153,12 +153,6 @@ p{
     }
 
 
-  
-
-
-
-
-
 .offcanvas{
 background-color: black;
 opacity: 80%;
@@ -274,24 +268,20 @@ border: solid;
 }
 
 .img_project{
-    max-width: 100%;
+    max-width: 30%;
     
 }
-.img_project:active{
-    transform: scale(200%);
-}
 .cont_info {
-  
-
-             width: 100%;
+    width: 100%;
    }
 
 
   .cont_line{
    
     position: relative;
+    background-color: black;
     height: 2px; /* ajusta como desees */
-    margin: 2px;
+    margin: 10px;
 
    }
 
