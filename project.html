@@ -13,76 +13,14 @@
     <body>
 
      <!--HEADER-->
-<header class="row justify-content-between  align-items-start">
-  <!-- Logo -->
-  <div class="col-9 col-md-6 container_logo"> 
 
-    <section class="sec_logoP">
+   <!--HEADER-->
+   <header class="row justify-content-between  align-items-start">
+                  
+    <div id="header-container"></div>
+                 
+    </header>
 
-    </section>
-    
-</div>
-
-  <!-- Menú horizontal -->
-  <div class="col-6 d-none d-lg-flex">
-    <div class="row w-100 justify-content-center">
-      <div class="col-auto">
-        <a class="nav-link" href="index.html"><p class="p_h2">home</p></a>
-      </div>
-      <div class="col-auto">
-        <a class="nav-link" href="project.html"><p class="p_h2">projects</p></a>
-      </div>
-      <div class="col-auto">
-        <p class="p_h2">expertise</p>
-      </div>
-      <div class="col-auto">
-        <a class="nav-link" href="aboutme.html"><p class="p_h2">about_me</p></a>
-      </div>
-      <div class="col-auto">
-        <a class="nav-link" href="contact.html"><p class="p_h2">contact</p></a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Menú hamburguesa (solo en pantallas pequeñas) -->
-  <div class="col-3 d-flex align-items-center justify-content-end d-block d-lg-none">
-    <nav class="navbar">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-          <span class="navbar-toggler-icon btn_menu"></span>
-        </button>
-
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
-              <span class="navbar-toggler-icon btn_menu2"></span>
-            </button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link text-decoration-underline" href="index.html"><p class="p_h_m">home</p></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-decoration-underline" href="project.html"><p class="p_h_m">project</p></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-decoration-underline" href="aboutme.html"><p class="p_h_m">about_me</p></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-decoration-underline" href="contact.html"><p class="p_h_m">contact</p></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-decoration-underline" href="project.html"><p class="p_h_m">gallery</p></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </div>
-</header>
 
           
           <!-- Línea inferior -->
@@ -150,37 +88,38 @@
         
         </div>
        
-
+        <script src="js/script.js"></script>
         <footer class="container-fluid row container_foot justify-content-center align-items-center">
-            <div class="container-fluid col-12 col-md-2 cont_footer">
-                <a class="nav-link text-decoration-underline" href="index.html"><p class="p_h">home</p></a>
-                
-            </div>
-            <div class="container-fluid col-12 col-md-2 cont_footer">
-                
-                <a class="nav-link text-decoration-underline" href="project.html"><p class="p_h">projects</p></a>
-               
-               
-    
-            </div>
-            <div class="container-fluid col-12 col-md-2 cont_footer">
+          <div class="col-12 col-md-2 cont_footer">
+              <a class="p_h" href="index.html">home</a>
               
-               
-                <p class="p_h">expertise</p>
-                
-    
-            </div>
-            <div class="container-fluid col-12 col-md-2 cont_footer">
-                        <a class="nav-link text-decoration-underline" href="aboutme.html"><p class="p_h">about_me</p></a>
-         
-            </div>
-            <div class="container-fluid col-12 col-md-2 cont_footer">
+          </div>
+          <div class="col-12 col-md-2 cont_footer">
+              
+              <a class="p_h" href="project.html">projects</a>
              
-        <a class="nav-link text-decoration-underline" href="contact.html"><p class="p_h">contact</p></a>
-    
-    </div>
+             
+      
+          </div>
+          <div class="col-12 col-md-2 cont_footer">
+            
+          
+             
+              <p class="p_h">expertise</p>
+              
+      
+          </div>
+          <div class="col-12 col-md-2 cont_footer">
+                      <a class="p_h" href="aboutme.html">about_me</a>
+       
+          </div>
+          <div class="col-12 col-md-2 cont_footer">
            
-        </footer>
+      <a class="p_h" href="contact.html">contact</a>
+      
+      </div>
+         
+      </footer>
         
  <!-- Bootstrap Bundle JS (incluye Popper) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

@@ -1,5 +1,7 @@
 
-
+a{
+    font-family: 'Courier New', Courier, monospace;
+}
 
 .my_container1 , .my_container{
     width: 100%;
@@ -33,8 +35,19 @@
     text-align: center;
     
 }
+.lnk_gallery{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    line-height: 2;
+    text-decoration: none;
+    color: white;
+}
 
-
+.cont_lnk_gallery{
+    background-color: #90720d;
+    height: auto;
+    margin: 1rem;;
+}
 
 .div_menu_home {
     border-right: 2px solid black; /* o el color que prefieras */
@@ -67,7 +80,7 @@ padding: 2rem;
 
 .cont_line2{
     position: relative;
-    height: 2px; /* ajusta como desees */
+    height: 2px; 
    margin-bottom: 10rem;
    margin-top: 1rem;
    }  
@@ -105,31 +118,25 @@ p{
 
 
 /*HOVER PARA MENU*/
+a:hover{    
+    transform: scale(1.05);
+    text-decoration: underline;
+    
+}
 
- .p_v:hover{    
-         transform: scale(1.05);
-         text-decoration: underline;
-         
-    }
-    .p_h:hover{
-        transform: scale(1.05);
-        text-decoration: underline;
-    }
+.cont_lnk_gallery:hover{    
+    transform: scale(1.05);
+    text-decoration: underline;
+    
+}
 
-    .p_h_m:hover{
-        transform: scale(1.05);
-        text-decoration: underline;
-    }
-
-    /*HOVER PARA MENU FIN*/
+ /*HOVER PARA MENU FIN*/
 
   
     
     .p_h{   /*menu Horizontal*/
-        padding-block:0.5em;
-        padding-right: 5em;
-        padding-left: 5em;
-        color: #ffff;
+        font-weight: 700;
+       color: #ffff;
         text-align: center;
     }
     
@@ -173,6 +180,35 @@ margin-bottom: 2rem;
     margin: 1em;  
 }
 
+
+/*Efecto de bounce*/
+.imagen-saltito:hover{
+    transform: scale(1.05);
+            opacity: 1;
+}
+
+
+    .imagen-saltito {
+        animation: saltito 1s ease-out;
+        animation-delay: 0.2s;
+      }
+      
+      @keyframes saltito {
+        0% {
+            transform: scale(1);
+            opacity: 0;
+          }
+          50% {
+            transform: scale(1.05);
+            opacity: 1;
+          }
+          100% {
+            transform: scale(1);
+            opacity: 1;
+          }
+    
+}
+/*Efecto de bounce*/
 
 
 .sec_hero{
@@ -423,10 +459,7 @@ border: solid;
         z-index: 1;
         background-color: transparent;
       }
-      .p_h{
-        margin: 0;
-      }
-
+     
       footer.container_foot {
         margin-top: 2rem;
         text-align: center;

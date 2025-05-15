@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
   const images = document.querySelectorAll('.popup-img');
+  let currentIndex = 0;
 
-  // Crear el contenedor del popup si no existe
+  // Crear el contenedor del popup
   let popup = document.createElement('div');
   popup.id = 'popup-container';
   popup.style.position = 'fixed';
@@ -18,19 +19,161 @@ document.addEventListener('DOMContentLoaded', function () {
   const popupImg = document.createElement('img');
   popupImg.style.maxWidth = '90%';
   popupImg.style.maxHeight = '90%';
+  popupImg.style.transition = '0.3s ease';
   popup.appendChild(popupImg);
+
+  // Botón anterior
+  const prevBtn = document.createElement('button');
+  prevBtn.innerHTML = '⟵';
+  prevBtn.style.position = 'absolute';
+  prevBtn.style.left = '20px';
+  prevBtn.style.top = '50%';
+  prevBtn.style.transform = 'translateY(-50%)';
+  prevBtn.style.fontSize = '2rem';
+  prevBtn.style.color = 'white';
+  prevBtn.style.background = 'none';
+  prevBtn.style.border = 'none';
+  prevBtn.style.cursor = 'pointer';
+  popup.appendChild(prevBtn);
+
+  // Botón siguiente
+  const nextBtn = document.createElement('button');
+  nextBtn.innerHTML = '⟶';
+  nextBtn.style.position = 'absolute';
+  nextBtn.style.right = '20px';
+  nextBtn.style.top = '50%';
+  nextBtn.style.transform = 'translateY(-50%)';
+  nextBtn.style.fontSize = '2rem';
+  nextBtn.style.color = 'white';
+  nextBtn.style.background = 'none';
+  nextBtn.style.border = 'none';
+  nextBtn.style.cursor = 'pointer';
+  popup.appendChild(nextBtn);
 
   document.body.appendChild(popup);
 
-  images.forEach(img => {
+  function showImage(index) {
+    if (index >= 0 && index < images.length) {
+      popupImg.src = images[index].src;
+      currentIndex = index;
+    }
+  }
+
+  images.forEach((img, index) => {
     img.addEventListener('click', function () {
-      popupImg.src = this.src;
+      showImage(index);
       popup.style.display = 'flex';
     });
   });
 
-  popup.addEventListener('click', function () {
-    popup.style.display = 'none';
-    popupImg.src = '';
+  // Cerrar popup al hacer clic fuera de la imagen
+  popup.addEventListener('click', function (e) {
+    if (e.target === popup || e.target === popupImg) {
+      popup.style.display = 'none';
+      popupImg.src = '';
+    }
   });
+
+  // Navegación
+  prevBtn.addEventListener('click', function (e) {
+    e.stopPropagation();
+    showImage((currentIndex - 1 + images.length) % images.length);
+  });
+
+  nextBtn.addEventListener('click', function (e) {
+    e.stopPropagation();
+    showImage((currentIndex + 1) % images.length);
+  });
+
+  // Navegación con teclado
+  document.addEventListener('keydown', function (e) {
+    if (popup.style.display === 'flex') {
+      if (e.key === 'ArrowLeft') {
+        showImage((currentIndex - 1 + images.length) % images.length);
+      } else if (e.key === 'ArrowRight') {
+        showImage((currentIndex + 1) % images.length);
+      } else if (e.key === 'Escape') {
+        popup.style.display = 'none';
+        popupImg.src = '';
+      }
+    }
+  });
+});
+// menus
+document.addEventListener('DOMContentLoaded', () => {
+  const headerHTML = `
+    <header class="row justify-content-between align-items-start">
+      <!-- Logo -->
+      <div class="col-9 col-md-6 container_logo"> 
+        <section class="sec_logoP">
+          <!-- Aquí va tu logo -->
+        </section>
+      </div>
+      
+      <!-- Menú horizontal -->
+      <div class="col-6 d-none d-lg-flex">
+        <div class="row w-100 justify-content-center">
+          <div class="col-auto">
+            <a class="nav-link p_h2" href="index.html">home</a>
+          </div>
+          <div class="col-auto">
+            <a class="nav-link p_h2" href="project.html">projects</a>
+          </div>
+          <div class="col-auto">
+           <a class="nav-link p_h2" href="experience.html">expertise</a>
+          </div>
+          <div class="col-auto">
+           <a class="nav-link p_h2" href="aboutme.html">aboutme</a>
+          </div>
+          <div class="col-auto">
+          <a class="nav-link p_h2" href="contact">contact</a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Menú hamburguesa (solo en pantallas pequeñas) -->
+      <div class="col-3 d-flex align-items-center justify-content-end d-block d-lg-none">
+        <nav class="navbar">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon btn_menu"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                  <span class="navbar-toggler-icon btn_menu2"></span>
+                </button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link text-decoration-underline" href="index.html"><p class="">home</p></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-decoration-underline" href="project.html"><p class="p_h_m">project</p></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-decoration-underline" href="aboutme.html"><p class="p_h_m">about_me</p></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-decoration-underline" href="contact.html"><p class="p_h_m">contact</p></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-decoration-underline" href="project.html"><p class="p_h_m">gallery</p></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+  `;
+
+  // Insertar el header en el contenedor
+  const container = document.getElementById('header-container');
+  if (container) {
+    container.innerHTML = headerHTML;
+  }
 });
