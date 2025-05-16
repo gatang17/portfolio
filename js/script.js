@@ -105,9 +105,9 @@ document.addEventListener('DOMContentLoaded', () => {
     <header class="row justify-content-between align-items-start">
       <!-- Logo -->
       <div class="col-9 col-md-6 container_logo"> 
-        <section class="sec_logoP">
+        <div class="sec_logoP" id="logoH">
           <!-- Aquí va tu logo -->
-        </section>
+        </div>
       </div>
       
       <!-- Menú horizontal -->
@@ -223,3 +223,30 @@ document.addEventListener('DOMContentLoaded', () => {
     container.innerHTML = footerHTML;
   }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const link = document.getElementById('link_logoV');
+  
+  if (link) {
+    // Cambia el cursor a pointer
+    link.style.cursor = 'pointer';
+
+    // Redirige al hacer clic
+    link.addEventListener('click', () => {
+      window.location.href = 'aboutme.html'; // cambia esto por tu página real
+    });
+  }
+});
+
+document.addEventListener('DOMContentLoaded',()=>{
+  const link_home = document.getElementById('logoH');
+  
+  if (link_home) {
+    link_home.style.cursor = 'pointer';
+    link_home.addEventListener('click',()=>{
+      window,location.href = 'index.html';
+    });
+  }
+
+});
+

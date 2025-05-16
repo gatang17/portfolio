@@ -182,17 +182,35 @@ margin-bottom: 2rem;
     margin: 1em;  
 }
 
+@keyframes revelarDeDerecha {
+   0% {
+      clip-path: inset(0 0 0 100%); /* tapa todo desde la derecha */
+      opacity: 1;
+    }
+
+    100% {
+      clip-path: inset(0 0 0 0);    /* revela completamente */
+      opacity: 1;
+    }
+  }
+  
+  #link_logoV {
+    animation: revelarDeDerecha 1s ease-out forwards;
+  }
+  
+
 
 /*Efecto de bounce*/
+
 .imagen-saltito:hover{
-    transform: scale(1.05);
-            opacity: 1;
-}
+transform: scale(1.05);
+  }
 
-
-    .imagen-saltito {
+.imagen-saltito {
         animation: saltito 2s ease-out;
         animation-delay: 0.5s;
+        width: 50vw;
+
       }
       
       @keyframes saltito {
@@ -210,7 +228,7 @@ margin-bottom: 2rem;
           }
     
 }
-/*Efecto de bounce*/
+/**/
 
 
 .sec_hero{
@@ -345,6 +363,65 @@ border: solid;
     visibility: hidden;
 
 }
+/*Photoshop*/
+.aged {
+    position: relative;
+     overflow: hidden;
+  }
+  
+  .aged-before,
+  .aged-after {
+    height: auto;
+    display: block;
+  }
+  
+  .reveal-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    animation: revelarDeDerecha 3s linear infinite;
+    will-change: clip-path;
+    z-index: 2;
+  }
+  
+  .reveal-wrapper img {
+    object-fit: cover;
+    object-position: top;
+  }
+  
+  /* Animación de revelado horizontal */
+  @keyframes revelarDeDerecha {
+    0% {
+      clip-path: inset(0 0 0 100%); /* todo oculto desde la derecha */
+    }
+    100% {
+      clip-path: inset(0 0 0 0); /* completamente visible */
+    }
+  }
+  
+  
+  /* clip-path: de derecha a izquierda */
+  @keyframes revelarDeDerecha {
+    0% {
+      clip-path: inset(0 0 0 100%);
+    }
+    100% {
+      clip-path: inset(0 0 0 0%);
+    }
+  }
+  
+  /* efecto de pulsación suave */
+  @keyframes saltitoSuave {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.02);
+    }
+  }
+  
+  
  
   /*MEDIA QUERY*/
   @media (max-width: 850px) {
