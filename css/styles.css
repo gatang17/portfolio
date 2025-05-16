@@ -1,13 +1,15 @@
 
 a{
+    padding-top: 1rem;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .my_container1 , .my_container{
     width: 100%;
+    margin-bottom: 2rem;
 }
 .sec_logo {
-    height:  50vh;
+    height:  80vh;
     width: 100%;
     background-image: url('../images/logo.png');
     background-size: contain;
@@ -189,8 +191,8 @@ margin-bottom: 2rem;
 
 
     .imagen-saltito {
-        animation: saltito 1s ease-out;
-        animation-delay: 0.2s;
+        animation: saltito 2s ease-out;
+        animation-delay: 0.5s;
       }
       
       @keyframes saltito {

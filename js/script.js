@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
-// menus
+// menus top
 document.addEventListener('DOMContentLoaded', () => {
   const headerHTML = `
     <header class="row justify-content-between align-items-start">
@@ -169,11 +169,57 @@ document.addEventListener('DOMContentLoaded', () => {
         </nav>
       </div>
     </header>
-  `;
+  `
+  
+  ;
 
   // Insertar el header en el contenedor
   const container = document.getElementById('header-container');
   if (container) {
     container.innerHTML = headerHTML;
+  }
+});
+
+// menus footer
+document.addEventListener('DOMContentLoaded', () => {
+  const footerHTML = `
+   <footer class="container-fluid row container_foot justify-content-center align-items-center">
+  <div class="col-12 col-md-2 cont_footer">
+      <a class="p_h" href="index.html">home</a>
+      
+  </div>
+  <div class="col-12 col-md-2 cont_footer">
+      
+      <a class="p_h" href="project.html">projects</a>
+     
+     
+
+  </div>
+  <div class="col-12 col-md-2 cont_footer">
+    
+    <a class="p_h" href="experience.html">expertise</a>
+     
+      
+
+  </div>
+  <div class="col-12 col-md-2 cont_footer">
+              <a class="p_h" href="aboutme.html">about_me</a>
+
+  </div>
+  <div class="col-12 col-md-2 cont_footer">
+   
+<a class="p_h" href="contact.html">contact</a>
+
+</div>
+ 
+</footer>
+  `
+  
+  ;
+
+  // Insertar el header en el contenedor
+  const container = document.getElementById('footer-container');
+  if (container) {
+    container.innerHTML = footerHTML;
   }
 });
