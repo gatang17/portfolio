@@ -364,6 +364,7 @@ border: solid;
 
 }
 /*Photoshop*/
+
 .aged {
     position: relative;
      overflow: hidden;
@@ -401,15 +402,7 @@ border: solid;
   }
   
   
-  /* clip-path: de derecha a izquierda */
-  @keyframes revelarDeDerecha {
-    0% {
-      clip-path: inset(0 0 0 100%);
-    }
-    100% {
-      clip-path: inset(0 0 0 0%);
-    }
-  }
+
   
   /* efecto de pulsación suave */
   @keyframes saltitoSuave {
