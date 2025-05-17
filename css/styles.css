@@ -111,20 +111,28 @@ p{
     hyphens: none;
     }
 
-    .p_v, .p_h, .p_h_m{ 
+    .p_v, .p_h, .p_h_m, .p_h2{ 
         /*solo PARA MENUs*/
         font-size: 1rem;
         margin-bottom: 2em;
+        font-weight: 700;
         
         }
 
 
 /*HOVER PARA MENU*/
-a:hover{    
+.p_h:hover,
+.p_v:hover,
+.p_h2:hover,
+.p_h_m:hover {
     transform: scale(1.05);
-    text-decoration: underline;
-    
+    text-decoration: underline; /* Solo se subraya al pasar el mouse */
 }
+.p_h, .p_v , .p_h , .p_h_m, .p_h2{
+    text-decoration: none; /* Quita el subrayado por defecto */
+    transition: transform 0.3s ease, text-decoration 0.3s ease;
+  }
+
 
 .cont_lnk_gallery:hover{    
     transform: scale(1.05);
@@ -133,22 +141,17 @@ a:hover{
 }
 
  /*HOVER PARA MENU FIN*/
-
+ .p_h2{
+    color: black;
+ }
   
     
-    .p_h{   /*menu Horizontal*/
-        font-weight: 700;
-       color: #ffff;
-        text-align: center;
-    }
-    
-      
-      .p_h_m{ /*menu offCanvas*/
-        padding-left: 2em;
+    .p_h,
+    .p_h_m{   /*menu Horizontal*/
         color: #ffff;
-        transition: transform 0.3s;
-      }
-      
+        text-align: center;
+        display: block;
+    }
 
 .p_v { /*menu vertical*/
     display: inline-block;
@@ -318,10 +321,7 @@ transform: scale(1.05);
     justify-content: center;
    }
 
-.my_col{
-border: solid;
 
-}
 
 .img_project{
     max-width: 30%;
@@ -399,6 +399,12 @@ border: solid;
     100% {
       clip-path: inset(0 0 0 0); /* completamente visible */
     }
+    0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.02);
+      }
   }
   
   
@@ -557,6 +563,8 @@ border: solid;
 
     .my_col {
         margin: 1rem 0; /* Asegura que haya un pequeño espacio entre las columnas */
+        border: none;
+        border-top: solid;
     }
     .p_hover { /*este es el texto*/
         font-size: 1rem;

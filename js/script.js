@@ -114,19 +114,19 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="col-6 d-none d-lg-flex">
         <div class="row w-100 justify-content-center">
           <div class="col-auto">
-            <a class="nav-link p_h2" href="index.html">home</a>
+            <a class="  p_h2" href="index.html">home</a>
           </div>
           <div class="col-auto">
-            <a class="nav-link p_h2" href="project.html">projects</a>
+            <a class="  p_h2" href="project.html">projects</a>
           </div>
           <div class="col-auto">
-           <a class="nav-link p_h2" href="experience.html">expertise</a>
+           <a class="p_h2" href="experience.html">expertise</a>
           </div>
           <div class="col-auto">
-           <a class="nav-link p_h2" href="aboutme.html">aboutme</a>
+           <a class="  p_h2" href="aboutme.html">about me</a>
           </div>
           <div class="col-auto">
-          <a class="nav-link p_h2" href="contact">contact</a>
+          <a class="  p_h2" href="contact.html">contact</a>
           </div>
         </div>
       </div>
@@ -145,24 +145,15 @@ document.addEventListener('DOMContentLoaded', () => {
                   <span class="navbar-toggler-icon btn_menu2"></span>
                 </button>
               </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li class="nav-item">
-                    <a class="nav-link text-decoration-underline" href="index.html"><p class="">home</p></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-decoration-underline" href="project.html"><p class="p_h_m">project</p></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-decoration-underline" href="aboutme.html"><p class="p_h_m">about_me</p></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-decoration-underline" href="contact.html"><p class="p_h_m">contact</p></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-decoration-underline" href="project.html"><p class="p_h_m">gallery</p></a>
-                  </li>
-                </ul>
+              <div class="offcanvas-body" style="dysplay=block;">
+               
+                
+                    <a class="p_h_m" href="index.html">home</a>
+                    <a class=" p_h_m " href="project.html">project</a>
+                    <a class=" p_h_m"  href="eperience.html">expertise</a>
+                    <a class=" p_h_m" href="aboutme.html">about me</a>
+                    <a class=" p_h_m" href="contact.html">contact</a>
+             
               </div>
             </div>
           </div>
