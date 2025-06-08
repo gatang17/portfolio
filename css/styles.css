@@ -433,12 +433,25 @@ transform: scale(1.05);
 }
 
 /* Contenido del popup */
+label, input {
+  margin: 10px;
+}
+
+.field-group {
+  display: flex;
+  align-items: center;
+  
+}
+textarea {
+  flex: 1; /* El textarea ocupa todo el espacio posible */
+}
+
 .popup-content {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   width: 90%;
-  max-width: 400px;
+  max-width: 50%;
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   position: relative;
 }
@@ -455,6 +468,15 @@ transform: scale(1.05);
 /* Oculto al inicio */
 .popup-hidden {
   display: none !important;
+}
+
+.btn_email{
+  border-radius: 5px;
+  border: none;
+  background-color: #90720d;
+  color: #fff;
+ 
+  
 }
  /********************************/
 
