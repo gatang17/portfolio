@@ -234,3 +234,24 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 
 
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Mostrar el formulario
+  document.getElementById("open-form").addEventListener("click", function(event) {
+    event.preventDefault(); // Evita que el link recargue la página
+    document.getElementById("popup-form").classList.remove("popup-hidden");
+  });
+
+  // Cerrar el formulario
+  document.getElementById("close-form").addEventListener("click", function() {
+    document.getElementById("popup-form").classList.add("popup-hidden");
+  });
+});
+
+
+
+
+
+
+
+
