@@ -280,6 +280,7 @@ transform: scale(1.05);
 }
 
 .tb_img{
+  margin: 1rem;
     height: auto;
     width: auto;
     z-index: 3;
