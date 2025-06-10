@@ -88,8 +88,11 @@ padding: 2rem;
    margin-top: 1rem;
    }  
 
-h1{
+   h1, h2, h3, ul {
     font-family: 'Courier New', Courier, monospace;
+   }
+h1{
+   
     font-weight: bolder;
 }
 
